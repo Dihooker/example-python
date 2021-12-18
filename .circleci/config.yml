@@ -1,5 +1,5 @@
 version: 2.1
-orbs:
+orb:
   codecov: codecov/codecov@3.0.0
 
 
@@ -17,7 +17,7 @@ jobs:
           command: |
             coverage run tests.py
             coverage xml
-      - codecov/upload
+      
 
 workflow:
   version: 2.1
